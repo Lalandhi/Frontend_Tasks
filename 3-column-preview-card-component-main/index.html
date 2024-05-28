@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca&display=swap" rel="stylesheet">
+
+  
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+     @media screen and (min-width: 1440px) {
+  body{
+    background-color: hsl(0, 0%, 95%);
+  }
+    .box{
+      width: 350px;
+      height: 525px;
+    }
+    .box1{
+      width:auto;
+      margin-left:180px;
+      display: flex;
+      flex-direction: row;
+      margin-top: 140px;
+      /* justify-content: space-evenly; */
+    }
+    .title{
+      color:hsl(0, 0%, 95%);
+      font-family: "Big Shoulders Display";
+      font-size: 40px;
+      margin-left: 50px;
+    }
+    img{
+      margin-top: 50px;
+      margin-left: 50px;
+    }
+    p{
+      font-family: "Lexend Deca";
+      margin-left: 50px;
+      margin-right: 70px;
+      color: hsla(0, 0%, 100%, 0.75);
+      font-size: 15px;
+      font-weight: 200;
+      line-height: 25px;
+      height: 150px;
+    }
+    .button{
+      width:150px;
+      height: 50px;
+      background-color: hsl(0, 0%, 95%);
+      border-radius: 30px;
+      margin-left: 50px;
+      margin-top: 75px;
+    }
+    .center {
+      font-family: "Lexend Deca";
+      padding: 15px 0;
+      text-align: center;
+}
+.leftradius{
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+     }
+     .rightradius{
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+     }
+     }
+     @media screen and (max-width: 430px) {
+      body{
+    background-color: hsl(0, 0%, 95%);
+  }
+  .box{
+      width: 350px;
+      height: 525px;
+      margin: auto;
+    }
+    .box1{
+      width:410px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+    .title{
+      color:hsl(0, 0%, 95%);
+      font-family: "Big Shoulders Display";
+      font-size: 40px;
+      margin-left: 50px;
+    }
+    img{
+      margin-top: 50px;
+      margin-left: 50px;
+    }
+    p{
+      font-family: "Lexend Deca";
+      margin-left: 50px;
+      margin-right: 70px;
+      color: hsla(0, 0%, 100%, 0.75);
+      font-size: 15px;
+      font-weight: 200;
+      line-height: 25px;
+      height: 150px;
+    }
+    .button{
+      width:150px;
+      height: 50px;
+      background-color: hsl(0, 0%, 95%);
+      border-radius: 30px;
+      margin-left: 50px;
+      margin-top: 75px;
+    }
+    .center {
+      font-family: "Lexend Deca";
+      padding: 15px 0;
+      text-align: center;
+}
+.leftradius{
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+     }
+     .rightradius{
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+     }
+     }
+     
+    
+  </style>
+</head>
+<body>
+ <div class="box1">
+    <div class="box leftradius" style="background-color: hsl(31, 77%, 52%);">
+      <div><img src="images/icon-sedans.svg"></div>
+      <br>
+      <div class="title">SEDANS</div>
+      <br>
+      <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+      or on your next road trip.</p>
+      <div class="button">
+      <div class="center" style="color: hsl(31, 77%, 52%);"> Learn More</div>
+      </div>
+    </div>
+
+    <div class="box" style="background-color: hsl(184, 100%, 22%);">
+      <div><img src="images/icon-suvs.svg"></div>
+      <br>
+      <div class="title">SUVs</div>
+      <br>
+      <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+        and off-road adventures.</p>
+      <div class="button">
+      <div class="center" style="color: hsl(184, 100%, 22%);"> Learn More</div>
+      </div>
+    </div>
+    <div class="box rightradius"style="background-color: hsl(179, 100%, 13%);">
+      <div><img src="images/icon-luxury.svg"></div>
+      <br>
+      <div class="title">LUXURY</div>
+      <br>
+      <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+        rental and arrive in style.</p>
+      <div class="button">
+      <div class="center" style="color: hsl(179, 100%, 13%);"> Learn More</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
